@@ -1,0 +1,37 @@
+h1 {
+
+    color: #1500f7;
+    font-size: 47px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p, li{
+
+    color: #030303;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+h2 {
+
+    color: #1500f7;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+section {
+
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.deportes1, .deportes2, .deportes3 {
+
+    font-weight: bold;
+    font-size: small;
+}
