@@ -1,37 +1,69 @@
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.container {
+    
+    background-color: #f5f5f56d;
+    padding: 20px;
+    margin: 20px;
+}
 h1 {
 
-    color: #1500f7;
+    color: #09034c;
     font-size: 47px;
     text-align: center;
     margin-top: 20px;
 }
 
-p, li{
+p{
 
-    color: #030303;
+    color: #000000;
     font-size: 16px;
     line-height: 1.5;
     margin: 20px;
 }
+li {
 
+    list-style-type: none;
+    text-align: left;
+}
 h2 {
 
-    color: #1500f7;
+    color: #09034c;
     font-size: 35px;
     text-align: center;
     margin-top: 20px;
 }
 section {
 
-    background-color: #f2f2f2;
+    background-color: #bfb9b9b0;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     text-align: justify;
 }
 
-.deportes1, .deportes2, .deportes3 {
+.deportes1, .deportes2, .deportes3, .negocios1, .negocios2, .internacional1
+{
 
     font-weight: bold;
     font-size: small;
+}
+
+article{
+
+    display: inline-flex;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
 }
