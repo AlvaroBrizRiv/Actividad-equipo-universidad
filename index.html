@@ -3,8 +3,8 @@
 <head>
     <title>El faro Chile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Asset\img\Icono1.png"
  width="16" height="16">
     <meta charset="UTF-8">
@@ -14,13 +14,28 @@
   
 </head>
 <body>
-    <div class="container">
-    <h1>NOTICIAS "EL FARO"</h1>
+    <header>
+        <div class="container">
+            <!--<h1>NOTICIAS "EL FARO"</h1>
+            <div class ="header-content">
+            <img src ="Asset\img\Icono1.png" alt="Icono1" class="header-img"/>-->
+
+
+
+        <header class ="video-header">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="Asset\video\video.mp4" type="video/mp4">
+        </video>
+        </header>
+    </header>
     
-    <img src ="Asset\img\Icono1.png" width="400" height="250" />
-       <video controls width="400" height="250">
-        <source src="Asset\video\video.mp4" type="video/mp4">
-    </video>
+            <!--<img src ="Asset\img\Icono1.png" width="400" height="250" />
+        <video controls width="450" height="250">
+            <source src="Asset\video\video.mp4" type="video/mp4">
+        </video>
+    </header>-->
+
+
     <nav class="MENÚ">
         <ul>
             <li><a href="#Inicio">Inicio</a></li>
@@ -29,17 +44,18 @@
             <li><a href="#Internacional">Internacional</a></li>
         </ul>
     </nav>
-
+    <p class = "separacion-media"></p>
+    <p id="Deportes"></p>
     <h2>Deportes</h2>
     <p>En esta sección encontrará todo lo relacionado al deporte nacional</p>
     <br>
-    <section id="Deportes">
-    <article>
-    <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg" width="750" height="265"/>
-    <p><strong>Arturo Vidal quedó descartado para enfrentar a Deportes Concepción y ya piensa en su nuevo objetivo</strong></p>
-    <p>Arturo Vidal se perderá el duelo de Colo Colo contra Deportes Concepción por un tirón en el isquiotibial de la pierna derecha. A pesar de no ser grave, el "King" no podrá participar en la Copa de la Liga.</p>
-    <p class = "deportes1">Más información haciendo click <a href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/23/arturo-vidal-quedo-descartado-para-enfrentar-a-deportes-concepcion-y-ya-piensa-en-su-nuevo-objetivo.shtml">aquí</a></p>
-    </article>
+    <section>
+        <article>
+        <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg" width="750" height="265"/>
+        <p><strong>Arturo Vidal quedó descartado para enfrentar a Deportes Concepción y ya piensa en su nuevo objetivo</strong></p>
+        <p>Arturo Vidal se perderá el duelo de Colo Colo contra Deportes Concepción por un tirón en el isquiotibial de la pierna derecha. A pesar de no ser grave, el "King" no podrá participar en la Copa de la Liga.</p>
+        <p class = "deportes1">Más información haciendo click <a href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/23/arturo-vidal-quedo-descartado-para-enfrentar-a-deportes-concepcion-y-ya-piensa-en-su-nuevo-objetivo.shtml">aquí</a></p>
+        </article>
     <br>
     <br>
     <br>
@@ -65,10 +81,12 @@
     <br>
     <br>
     <br>
+
+    <p id="Negocios"></p>
     <h2>Negocios</h2>
     <p>En esta sección encontrará todo lo relacionado a la economía nacional</p>
     <br>
-    <section id="Negocios">
+    <section>
     <article>
     <img src="https://www.latercera.com/resizer/v2/JEB4BQPDFREQDGZ544DCKQ6PYQ.jpg?auth=290c2de337a3b7416f8ac7413f876c4a3e1f199669b86a04ac03b8d099b2c27a&smart=true&width=990&height=557&quality=70" width ="750" height="280"/>
     <p><strong>Startup chilena de venta de equipos reacondicionados ingresó a la selecta red mundial de Endeavor</strong></p>
@@ -90,8 +108,9 @@
     <br>
     <br>
     <br>
-    <section id="Internacional">
+    <p id="Internacional"></p>
     <h2>Internacional</h2>
+    <section>
     <article>
     <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_1600x800/public/t13/field-imagen/2026-03/pexels-karola-g-8528741.jpg.jpeg?itok=CSIR-A4y" width="750" height="280"/>
     <p><strong>Radiografía del emprendimiento femenino 2026: Sobrecarga de cuidados frena el crecimiento</strong></p>
@@ -103,16 +122,10 @@
     <br>
     <br>
     <br>
-
- 
-
-    
-
-
-    <footer>
-        <audio controls>
+    <audio controls>
         <source src="Asset\audio\audio.mp3" type="audio/mpeg">
     </audio>
+    <footer>
         <div class="container">
             <p>&copy; Periódico El Faro 2026</p>
         </div>
