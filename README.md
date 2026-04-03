@@ -36,3 +36,4 @@ Este proyecto fue maquetado y diseñado por nuestro grupo de estudio.
 1. Descarga el archivo `index.html` y sus recursos gráficos (como `icono1.png`).
 2. Guárdalos en una misma carpeta local.
 3. Haz doble clic en `index.html` para abrirlo en tu navegador web de preferencia (Chrome, Edge, Firefox). ¡Y listo para leer las noticias! 🎉
+4. Puedes visualizar la página en https://alvarobrizriv.github.io/Actividad-equipo-universidad/
