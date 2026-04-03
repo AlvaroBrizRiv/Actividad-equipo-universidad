@@ -1,0 +1,141 @@
+h1 {
+
+    color: #11034b;
+    font-size: 47px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.video-header {
+  position: relative; /* Esencial para que los hijos con 'absolute' no se escapen */
+  height: 70vh; /* El header ocupará el 80% de la altura de la pantalla */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Corta lo que sobresalga del video */
+}
+
+.video-bg {
+  position: absolute; /* Permite posicionar el video detrás del contenido */
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Lo manda al fondo de todo */
+  transform: translate(-50%, -50%); /* Lo centra perfectamente */
+  object-fit: cover; /* Hace que el video se comporte como una imagen de fondo */
+}
+
+.header-content {
+  text-align: center;
+  color: white; /* Color del título */
+  z-index: 1; /* Asegura que esté por encima del video */
+}
+
+
+/*MENU*/
+
+nav.MENÚ {
+
+    background-color: #010007;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.MENÚ ul {
+
+    display: inline-flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav.MENÚ a:hover{
+
+color: #f1eef0;
+
+}
+
+
+/*BODY*/
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.separacion-media {
+
+    margin-top: 90px;
+}
+
+h2 {
+
+    color: #09034c;
+    font-size: 35px;
+    text-align: left;
+    margin-top: 20px;
+    border-bottom: 3px solid #5c5794;
+    margin-bottom: 15px;
+}
+
+a:hover{
+
+    text-decoration: none;
+    touch-action: cross-slide-x;
+    touch-action: cross-slide-y;
+    font-style: bold;   
+}
+
+a{
+
+    text-decoration: underline;
+}
+
+section {
+
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    text-align: justify;
+    width: 90%;
+    max-width: 1100px;
+    box-shadow: #4d4b4b 0px 0px 10px;
+}
+article:hover{
+
+    background-color: #040000;
+    color: #ffffff;
+}
+
+article{
+
+    display: inline-flex;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    box-shadow: #4d4b4b 0px 0px 10px;
+}
+.deportes1, .deportes2, .deportes3, .negocios1, .negocios2, .internacional1
+{
+
+    font-weight: bold;
+    font-size: small;
+}
+
+footer {
+
+    text-align: center;
+    background-color: #c9d2d0;
+    color:  #31231e;
+    padding: 5px;
+}
