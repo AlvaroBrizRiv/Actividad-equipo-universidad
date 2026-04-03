@@ -139,3 +139,9 @@ footer {
     color:  #31231e;
     padding: 5px;
 }
+/*RESPONSIVIDAD, para pantallas pequeñas (celular) */
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr; 
+    }
+}
