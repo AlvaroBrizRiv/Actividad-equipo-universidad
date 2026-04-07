@@ -1,82 +1,76 @@
 h1 {
-
     color: #11034b;
     font-size: 47px;
     text-align: center;
     margin-top: 15px;
 }
 
+/* HEADER CON VIDEO */
 .video-header {
-  position: relative; /* Esencial para que los hijos con 'absolute' no se escapen */
-  height: 70vh; /* El header ocupará el 80% de la altura de la pantalla */
+  position: relative;
+  height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Corta lo que sobresalga del video */
+  overflow: hidden;
 }
 
 .video-bg {
-  position: absolute; /* Permite posicionar el video detrás del contenido */
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1; /* Lo manda al fondo de todo */
-  transform: translate(-50%, -50%); /* Lo centra perfectamente */
-  object-fit: cover; /* Hace que el video se comporte como una imagen de fondo */
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .header-content {
   text-align: center;
-  color: white; /* Color del título */
-  z-index: 1; /* Asegura que esté por encima del video */
+  color: white;
+  z-index: 1;
 }
 
-
-/*MENU*/
-
+/* MENÚ */
 nav.MENÚ {
-
     background-color: #010007;
     padding: 10px;
     text-align: center;
 }
 
 nav.MENÚ ul {
-
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     gap: 20px;
     list-style: none;
+    flex-wrap: wrap; /* 🔥 Permite que el menú se adapte en pantallas pequeñas */
 }
 
-nav.MENÚ a:hover{
-
-color: #f1eef0;
-
+nav.MENÚ a:hover {
+    color: #f1eef0;
 }
 
-
-/*BODY*/
+/* BODY */
 body {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
+
 button, input, select, textarea {
   font-family: inherit;
 }
 
 .separacion-media {
-
     margin-top: 90px;
 }
 
 h2 {
-
     color: #09034c;
     font-size: 35px;
     text-align: left;
@@ -85,21 +79,17 @@ h2 {
     margin-bottom: 15px;
 }
 
-a:hover{
-
+a:hover {
     text-decoration: none;
-    touch-action: cross-slide-x;
-    touch-action: cross-slide-y;
-    font-style: bold;   
+    font-style: bold;
 }
 
-a{
-
+a {
     text-decoration: underline;
 }
 
+/* SECCIONES */
 section {
-
     background-color: #f5f5f5;
     padding: 20px;
     margin: 30px auto;
@@ -109,39 +99,113 @@ section {
     max-width: 1100px;
     box-shadow: #4d4b4b 0px 0px 10px;
 }
-article:hover{
 
+/* ARTÍCULOS */
+article {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    box-shadow: #4d4b4b 0px 0px 10px;
+    transition: 0.3s;
+}
+
+/* Contenedor de texto de los artículos */
+.info-articulo {
+    display: flex;
+    flex-direction: column; /* Apila el título, resumen y enlace verticalmente */
+    justify-content: center; /* Centra el texto verticalmente respecto a la imagen */
+    padding: 0 25px; /* Agrega 25px de espacio a la izquierda y derecha para que respire */
+    gap: 12px; /* Crea una separación perfecta de 12px entre cada párrafo */
+}
+
+/* REGLA PARA HACER LAS IMÁGENES RESPONSIVAS */
+article img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; /* Un toque estético opcional */
+}
+
+article:hover {
     background-color: #040000;
     color: #ffffff;
 }
 
-article{
-
-    display: inline-flex;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-    width: 98%;
-    box-shadow: #4d4b4b 0px 0px 10px;
-}
-.deportes1, .deportes2, .deportes3, .negocios1, .negocios2, .internacional1
-{
-
+.deportes1, .deportes2, .deportes3, .negocios1, .negocios2, .internacional1 {
     font-weight: bold;
     font-size: small;
 }
 
 footer {
-
     text-align: center;
     background-color: #c9d2d0;
     color:  #31231e;
     padding: 5px;
 }
-/*RESPONSIVIDAD, para pantallas pequeñas (celular) */
-@media screen and (max-width: 768px){
-    .contenedor{
-        grid-template-columns: 1fr; 
+
+/* RESPONSIVIDAD */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Header más compacto */
+    .video-header {
+        height: auto;
+    }
+
+    .video-bg{
+
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        min-width: auto;
+        transform: none;
+        top: auto;
+        left: auto;
+    }
+
+    /* Menú en columnas si es necesario */
+    nav.MENÚ ul {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    /* Artículos en columna */
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav.MENÚ ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section {
+        padding: 15px;
     }
 }
