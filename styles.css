@@ -66,6 +66,14 @@ button, input, select, textarea {
   font-family: inherit;
 }
 
+div.reloj{
+
+    text-align: left;
+    margin-left: 20px;
+    width: 50%;
+
+}
+
 .separacion-media {
     margin-top: 90px;
 }

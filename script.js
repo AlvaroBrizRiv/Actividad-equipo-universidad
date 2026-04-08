@@ -1,6 +1,9 @@
-function fechaYHora() {
-    new Date().toLocaleString("es-CL",)
+function actualizarReloj()
+{
+    let fecha = new Date();
+    let contenedorReloj = document.getElementById('reloj');
+    contenedorReloj.innerText = "Hora en Chile: " + fecha.toLocaleTimeString();
 
 }
-fechaYHora();
-document.getElementById('fechaYHora').textContent = fechaYHora();
+actualizarReloj();
+setInterval(actualizarReloj, 1000);
