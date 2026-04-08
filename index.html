@@ -23,19 +23,54 @@
 
     <nav class="MENÚ">
         <ul>
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Deportes">Deportes</a></li>
-            <li><a href="#Negocios">Negocios</a></li>
-            <li><a href="#Internacional">Internacional</a></li>
+            <li><a href="#seccion-inicio">Inicio</a></li>
+            <li><a href="#seccion-deportes">Deportes</a></li>
+            <li><a href="#seccion-negocios">Negocios</a></li>
+            <li><a href="#seccion-internacional">Internacional</a></li>
         </ul>
     </nav>
-    <div id="reloj"> </div>
+    <section class="formulario-seccion">
+    <h2>Agregar Nuevo Artículo</h2>
+    <form id="formulario-articulo">
+        <div class="grupo-input">
+            <label for="imagen-articulo">URL de la imagen:</label>
+            <input type="url" id="imagen-articulo" placeholder="Ej: https://example.com/imagen.jpg" required />
+        </div>
+
+        <div class="grupo-input">
+            <label for="titulo-articulo">Título del artículo:</label>
+            <input type="text" id="titulo-articulo" placeholder="Ej: Nuevo triunfo de La Roja" required />
+        </div>
+
+        <div class="grupo-input">
+            <label for="descripcion-articulo">Descripción del artículo:</label>
+            <textarea id="descripcion-articulo" rows="4" placeholder="Escribe el desarrollo de la noticia aquí..." required></textarea>
+        </div>
+
+        <div class="grupo-input">
+            <label for="link-articulo">Enlace del artículo:</label>
+            <input type="url" id="link-articulo" placeholder="Ej: https://example.com/articulo.html" required />
+        </div>
+
+        <div class="grupo-input">
+            <label for="categoria-articulo">Categoría del artículo:</label>
+            <select id="categoria-articulo" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="deportes">Deportes</option>
+                <option value="negocios">Negocios</option>
+                <option value="internacional">Internacional</option>
+            </select>
+        </div>
+
+        <button type="submit" id="btn-publicar">Publicar Artículo</button>
+        
+    </form>
+</section>
     <p class = "separacion-media"></p>
-    <p id="Deportes"></p>
     <h2>Deportes</h2>
     <p>En esta sección encontrará todo lo relacionado al deporte nacional</p>
     <br>
-    <section>
+    <section id="seccion-deportes">
         <article>
         <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg" width="750" height="265"/>
         <div class = "info-articulo">
@@ -73,11 +108,10 @@
     <br>
     <br>
 
-    <p id="Negocios"></p>
     <h2>Negocios</h2>
     <p>En esta sección encontrará todo lo relacionado a la economía nacional</p>
     <br>
-    <section>
+    <section id="seccion-negocios">
     <article>
     <img src="https://www.latercera.com/resizer/v2/JEB4BQPDFREQDGZ544DCKQ6PYQ.jpg?auth=290c2de337a3b7416f8ac7413f876c4a3e1f199669b86a04ac03b8d099b2c27a&smart=true&width=990&height=557&quality=70" width ="750" height="280"/>
     
@@ -104,9 +138,8 @@
     <br>
     <br>
     <br>
-    <p id="Internacional"></p>
     <h2>Internacional</h2>
-    <section>
+    <section id="seccion-internacional">
     <article>
     <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_1600x800/public/t13/field-imagen/2026-03/pexels-karola-g-8528741.jpg.jpeg?itok=CSIR-A4y" width="750" height="280"/>
     <div class = "info-articulo">
@@ -117,7 +150,7 @@
     </article>
     </section>
     <br>
-    <br>
+    <br> 
     <br>
     <br>
     <audio controls>
