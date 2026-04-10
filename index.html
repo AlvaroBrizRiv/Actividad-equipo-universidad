@@ -16,10 +16,11 @@
 <body>
         <header class ="video-header">
         <video autoplay muted loop playsinline class="video-bg">
-            <source src="Asset\video\video.mp4" type="video/mp4">
+            <source src="https://imgur.com/a/9OIM501" type="video/mp4">
         </video>
         </header>
- 
+        <!-- https://imgur.com/a/9OIM501 -->
+         <!--Asset\video\video.mp4-->
 
     <nav class="MENÚ">
         <ul>
@@ -29,6 +30,8 @@
             <li><a href="#seccion-internacional">Internacional</a></li>
         </ul>
     </nav>
+    <div id="fecha">Fecha: </div>
+    <div id="reloj">Hora: </div>
     <section class="formulario-seccion">
     <h2>Agregar Nuevo Artículo</h2>
     <form id="formulario-articulo">
@@ -70,6 +73,7 @@
     <h2>Deportes</h2>
     <p>En esta sección encontrará todo lo relacionado al deporte nacional</p>
     <br>
+    <div id="cantidad-deportes">cantidad de noticias: 0</div>
     <section id="seccion-deportes">
         <article>
         <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg" width="750" height="265"/>
@@ -111,6 +115,7 @@
     <h2>Negocios</h2>
     <p>En esta sección encontrará todo lo relacionado a la economía nacional</p>
     <br>
+    <div id="cantidad-negocios">cantidad de noticias: 0</div>
     <section id="seccion-negocios">
     <article>
     <img src="https://www.latercera.com/resizer/v2/JEB4BQPDFREQDGZ544DCKQ6PYQ.jpg?auth=290c2de337a3b7416f8ac7413f876c4a3e1f199669b86a04ac03b8d099b2c27a&smart=true&width=990&height=557&quality=70" width ="750" height="280"/>
@@ -139,6 +144,7 @@
     <br>
     <br>
     <h2>Internacional</h2>
+    <div id="cantidad-internacional">cantidad de noticias: 0</div>
     <section id="seccion-internacional">
     <article>
     <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_1600x800/public/t13/field-imagen/2026-03/pexels-karola-g-8528741.jpg.jpeg?itok=CSIR-A4y" width="750" height="280"/>
@@ -156,6 +162,20 @@
     <audio controls>
         <source src="Asset\audio\audio.mp3" type="audio/mpeg">
     </audio>
+    <section class="formulario-seccion">
+    <form id="formulario-contacto">
+        <h2>Contacto</h2>
+    <div class="grupo-input">
+        <label for="nombre" class="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre completo">
+    </div>
+    <div class="grupo-input">
+        <label for="mensaje" class="mensaje">Mensaje:</label>
+        <textarea type="text" id="mensaje" name="mensaje" rows="4" placeholder="Deje su mensaje aquí"></textarea>
+    </div>
+    <button type="submit" id="btn-enviar">Enviar</button>
+    </form>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; Periódico El Faro 2026</p>

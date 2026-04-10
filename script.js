@@ -2,9 +2,15 @@ function actualizarReloj()
 {
     let fecha = new Date();
     let contenedorReloj = document.getElementById('reloj');
-    contenedorReloj.innerText = "Hora en Chile: " + fecha.toLocaleTimeString();
+    let contenedorFecha = document.getElementById('fecha');
+    let opciones = { hour: '2-digit', minute: '2-digit', second: '2-digit' };   
+    contenedorFecha.innerText = "Fecha: " + fecha.toLocaleDateString();
+    contenedorReloj.innerText = "Hora: " + fecha.toLocaleTimeString(opciones);
 
 }
+
+actualizarReloj();
+setInterval(actualizarReloj, 1000);
 
 const formulario = document.getElementById("formulario-articulo");
 
@@ -33,4 +39,19 @@ formulario.addEventListener("submit", function(evento){
 
     formulario.reset();
 
+    actualizarContadores();
+
 })
+
+function actualizarContadores() {
+    const categorias = ['deportes', 'negocios', 'internacional'];
+    categorias.forEach(categoria => {
+        const articulos = document.querySelectorAll(`#seccion-${categoria} article`);
+        const contador = document.getElementById(`cantidad-${categoria}`);
+        if (contador) {
+            contador.innerText = `cantidad de noticias: ${articulos.length}`;
+        }
+    });
+}
+
+actualizarContadores();

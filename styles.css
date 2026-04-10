@@ -80,7 +80,7 @@ nav.MENÚ a:hover {
     font-family: inherit; /* Hereda la fuente Roboto Slab */
 }
 
-button#btn-publicar {
+button#btn-publicar, button#btn-enviar {
     background-color: #09034c;
     color: white;
     padding: 10px 20px;
@@ -91,7 +91,7 @@ button#btn-publicar {
     transition: 0.3s;
 }
 
-button#btn-publicar:hover {
+button#btn-publicar:hover, button#btn-enviar:hover {
     background-color: #5c5794; /* Color lila cuando pasas el mouse */
 }
 
