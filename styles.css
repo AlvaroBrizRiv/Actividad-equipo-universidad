@@ -110,6 +110,20 @@ body {
 button, input, select, textarea {
   font-family: inherit;
 }
+/* Transición suave al pasar el mouse por las noticias */
+.card, .box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Gradiente para mejorar la lectura sobre imágenes */
+.has-background-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+}
 
 .separacion-media {
     margin-top: 90px;

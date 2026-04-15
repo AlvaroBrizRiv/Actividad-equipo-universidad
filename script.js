@@ -55,3 +55,23 @@ function actualizarContadores() {
 }
 
 actualizarContadores();
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Obtener todos los elementos "navbar-burger"
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Revisar si existen burgers
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        // Obtener el objetivo del atributo "data-target"
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Alternar la clase "is-active" tanto en el botón como en el menú
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});

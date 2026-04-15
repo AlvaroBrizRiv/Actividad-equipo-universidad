@@ -16,193 +16,312 @@
         <video autoplay muted loop playsinline class="video-bg">
             <source src="Asset/video/video.mp4" type="video/mp4">
         </video>    </header>
-    <nav class="MENÚ">
-        <ul>
-            <li><a href="#seccion-inicio">Inicio</a></li>
-            <li><a href="#seccion-deportes">Deportes</a></li>
-            <li><a href="#seccion-negocios">Negocios</a></li>
-            <li><a href="#seccion-internacional">Internacional</a></li>
-        </ul>
-    </nav>
-    <div id="fecha">Fecha: </div>
-    <div id="reloj">Hora: </div>
-    <section class="formulario-seccion">
-        <h2>Agregar Nuevo Artículo</h2>
-        <form id="formulario-articulo">
-            <div class="grupo-input">
-                <label for="imagen-articulo">URL de la imagen:</label>
-                <input type="url" id="imagen-articulo" placeholder="Ej: https://example.com/imagen.jpg" required />            </div>
-            <div class="grupo-input">
-                <label for="titulo-articulo">Título del artículo:</label>
-                <input type="text" id="titulo-articulo" placeholder="Ej: Nuevo triunfo de La Roja" required />
-            </div>
-            <div class="grupo-input">
-                <label for="descripcion-articulo">Descripción del artículo:</label>
-                <textarea id="descripcion-articulo" rows="4" placeholder="Escribe el desarrollo de la noticia aquí..."
-                    required></textarea>
-            </div>
-            <div class="grupo-input">
-                <label for="link-articulo">Enlace del artículo:</label>
-                <input type="url" id="link-articulo" placeholder="Ej: https://example.com/articulo.html" required />
-            </div>
-            <div class="grupo-input">
-                <label for="categoria-articulo">Categoría del artículo:</label>
-            <div class="control">
-                <div class="select">
-                    <select id="categoria-articulo" required>
-                        <option value="">Selecciona una categoría</option>
-                        <option value="deportes">Deportes</option>
-                        <option value="negocios">Negocios</option>
-                        <option value="internacional">Internacional</option>
-                    </select>
+    
+<div class="notification is-warning is-light has-text-centered mb-0 is-radiusless">
+        Mantente informado con nuestra nueva plataforma actualizada.
+    </div>
+    
+    <nav class="navbar is-dark is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold is-size-4" href="#seccion-inicio">
+        EL FARO CHILE
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#seccion-nacional">Nacional</a>
+        <a class="navbar-item" href="#seccion-internacional">Internacional</a>
+        <a class="navbar-item" href="#seccion-deportes">Deportes</a>
+        <a class="navbar-item" href="#seccion-negocios">Negocios</a>
+        <a class="navbar-item" href="#seccion-espectaculo">Espectáculo</a>
+        <a class="navbar-item has-text-weight-bold" href="agregar-articulo.html" target="_blank">
+          <span class="icon-text">
+            <span class="icon"><i class="fas fa-plus-circle"></i></span>
+            <span>Agregar artículo</span>
+    </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-link is-light is-small">
+              <strong>Suscribirse</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div style="margin-top: 2.5rem;"></div>
+
+    <div class="container is-max-desktop mt-4 px-3">
+        <div class="tags has-addons">
+            <span class="tag is-dark" id="fecha">Fecha: </span>
+            <span class="tag is-info is-light" id="reloj">Hora: </span>
+        </div>
+    </div>
+<section class="section pt-5">
+    <div class="container">
+        <div class="columns is-variable is-4">
+            
+            <div class="column is-7">
+                <div class="card is-relative is-shadowless" style="overflow: hidden; border-radius: 12px;">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://picsum.photos/id/0/1000/600" alt="Noticia Principal de Tecnología" style="object-fit: cover;">
+                        </figure>
+                    </div>
+                    <div class="is-overlay p-5 is-flex is-flex-direction-column is-justify-content-end" 
+                         style="background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);">
+                        <span class="tag is-danger is-uppercase has-text-weight-bold mb-2">Urgente</span>
+                        <h1 class="title is-2 has-text-white is-size-4-mobile">
+                            El futuro de la tecnología en Chile: Transformación digital en el 2026
+                        </h1>
+                        <p class="subtitle is-5 has-text-light is-hidden-mobile">
+                            Expertos analizan el impacto de la inteligencia artificial en el mercado laboral nacional y los nuevos desafíos para los programadores.
+                        </p>
+                        <a href="#" class="button is-link is-small" style="width: fit-content;">Leer Noticia</a>
+                    </div>
                 </div>
             </div>
-               
-            </div>
-                <button class="button is-primary" type="submit" id="btn-publicar">Publicar Artículo</button>
-        </form>
-    </section>
-    <p class="separacion-media"></p>
-    <h2>Deportes</h2>
-    <p>En esta sección encontrará todo lo relacionado al deporte nacional</p>
-    <br>
-    <div id="cantidad-deportes">cantidad de noticias: 0</div>
-    <section id="seccion-deportes">
-        <article>
-            <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg"
-                width="750" height="265" />
-            <div class="info-articulo">
-                <p><strong>Arturo Vidal quedó descartado para enfrentar a Deportes Concepción y ya piensa en su nuevo
-                        objetivo</strong></p>
-                <p>Arturo Vidal se perderá el duelo de Colo Colo contra Deportes Concepción por un tirón en el
-                    isquiotibial de la pierna derecha. A pesar de no ser grave, el "King" no podrá participar en la Copa
-                    de la Liga.</p>
-                <p class="deportes1">Más información haciendo click <a
-                        href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/23/arturo-vidal-quedo-descartado-para-enfrentar-a-deportes-concepcion-y-ya-piensa-en-su-nuevo-objetivo.shtml">aquí</a>
-                </p>
-            </div>
-        </article>
-        <br>
-        <br>
-        <br>
-        <br>
-        <article>
-            <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/colo-colo-empato-ante-coquimbo-en-la-copa-de-la-liga-750x400.jpg"
-                widht="750" height="265" />
-            <div class="info-articulo">
-                <p><strong>Colo Colo empató con Coquimbo Unido en su debut en la Copa de la Liga</strong></p>
-                <p>Colo Colo debutó en la Copa de la Liga con un empate 1-1 ante Coquimbo Unido, donde Matías Fernández
-                    anotó para el "Cacique" a los 34 minutos, mientras que Alejandro Azócar logró la igualdad para los
-                    "Piratas" a los 79'.</p>
-                <p class="deportes2">Más información haciendo click <a
-                        href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/21/colo-colo-empato-con-coquimbo-unido-en-su-debut-en-la-copa-de-la-liga.shtml">aquí</a>
-                </p>
-            </div>
-        </article>
-        <br>
-        <br>
-        <br>
-        <br>
-        <article>
-            <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/adidas-camiseta-chile-desierto-florido-alternativa-750x400.jpg"
-                widht="750" height="265" />
-            <div class="info-articulo">
-                <p><strong>Ya es oficial: lanzan nueva camiseta alternativa de Chile inspirada en Desierto
-                        Florido</strong></p>
-                <p>Lanzaron la nueva camiseta alternativa de la Selección Chilena, inspirada en el Desierto Florido, con
-                    un diseño blanco pálido y tintes rosas. Es la primera vez que el equipo vestirá un color distinto al
-                    blanco o azul, marcando un hito en su identidad visual.</p>
-                <p class="deportes3">Más información haciendo click <a
-                        href="https://www.biobiochile.cl/noticias/deportes/futbol/la-roja/2026/03/20/ya-es-oficial-adidas-lanza-nueva-camiseta-alternativa-de-chile-inspirada-en-desierto-florido.shtml">aquí</a>
-                </p>
-            </div>
-        </article>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2>Negocios</h2>
-    <p>En esta sección encontrará todo lo relacionado a la economía nacional</p>
-    <br>
-    <div id="cantidad-negocios">cantidad de noticias: 0</div>
-    <section id="seccion-negocios">
-        <article>
-            <img src="https://www.latercera.com/resizer/v2/JEB4BQPDFREQDGZ544DCKQ6PYQ.jpg?auth=290c2de337a3b7416f8ac7413f876c4a3e1f199669b86a04ac03b8d099b2c27a&smart=true&width=990&height=557&quality=70"
-                width="750" height="280" />
 
-            <div class="info-articulo">
-                <p><strong>Startup chilena de venta de equipos reacondicionados ingresó a la selecta red mundial de
-                        Endeavor</strong></p>
-                <p> Liderada por dos jóvenes emprendedores chilenos, Reuse está transformando el acceso a la tecnología
-                    en la región, impactando el mercado de electrónicos reacondicionados en Chile, México y Perú.</p>
-                <p class="negocios1"> Más información haciendo click <a
-                        href="https://www.latercera.com/emprendimiento/noticia/startup-chilena-de-venta-de-equipos-reacondicionados-ingreso-a-la-selecta-red-mundial-de-endeavor/">aquí</a>
-                </p>
+            <div class="column is-5">
+                <div class="columns is-multiline">
+                    
+                    <div class="column is-12">
+                        <div class="box is-paddingless is-shadowless" style="border-radius: 12px; overflow: hidden; background: #f9f9f9;">
+                            <div class="columns is-mobile is-gapless">
+                                <div class="column is-4">
+                                    <figure class="image is-1by1">
+                                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=400" alt="Miniatura" style="object-fit: cover;">
+                                    </figure>
+                                </div>
+                                <div class="column is-8 p-3">
+                                    <span class="tag is-info is-light is-small mb-1">Nacional</span>
+                                    <h3 class="title is-6 mb-2 has-text-black">Nuevas becas de especialización para desarrolladores en regiones.</h3>
+                                    <a href="#" class="is-size-7 has-text-link has-text-weight-bold">Seguir leyendo →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-12">
+                        <div class="box is-paddingless is-shadowless" style="border-radius: 12px; overflow: hidden; background: #f9f9f9;">
+                            <div class="columns is-mobile is-gapless">
+                                <div class="column is-4">
+                                    <figure class="image is-1by1">
+                                        <img src="https://picsum.photos/id/453/400/400" alt="Festival de Viña" style="object-fit: cover;">
+                                    </figure>
+                                </div>
+                                <div class="column is-8 p-3">
+                                    <span class="tag is-success is-light is-small mb-1">Espectáculo</span>
+                                    <h3 class="title is-6 mb-2 has-text-black">Festival de Viña 2026 confirma su parrilla internacional.</h3>
+                                    <a href="#" class="is-size-7 has-text-link has-text-weight-bold">Seguir leyendo →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </article>
-        <br>
-        <br>
-        <br>
-        <br>
-        <article>
-            <img src="https://www.diarioemprende.cl/files/69c3daa82a849_1200x719.jpg" width="750" height="300" />
-            <div class="info-articulo">
-                <p><strong> Lanzan programa de escalamiento para emprendimientos liderados por mujeres</strong></p>
-                <p>Como parte de su estrategia de apoyo al emprendimiento, Bci abrió una nueva convocatoria de Scale W.
-                </p>
-                <p class="negocios2">Más información haciendo click <a
-                        href="https://www.diarioemprende.cl/noticia/postulaciones-y-convocatorias/2026/03/lanzan-programa-de-escalamiento-para-emprendimientos-liderados-por-mujeres">aquí</a>
-                </p>
+
+        </div>
+    </div>
+</section>
+    <section id="seccion-deportes" class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-link mb-2" style="border-bottom: 3px solid #322a8f; padding-bottom: 5px;">Deportes</h2>
+            <p class="subtitle is-5 has-text-grey">En esta sección encontrará todo lo relacionado al deporte nacional</p>
+            <div id="cantidad-deportes" class="tag is-info is-light mb-5">cantidad de noticias: 0</div>
+
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <article class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/vidal-abajo-de-conce-750x400.jpg" alt="Arturo Vidal descartado" style="object-fit: cover;">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-grey-dark">Arturo Vidal quedó descartado para enfrentar a Deportes Concepción y ya piensa en su nuevo objetivo</p>
+                            <div class="content has-text-grey">
+                                Arturo Vidal se perderá el duelo de Colo Colo contra Deportes Concepción por un tirón en el isquiotibial de la pierna derecha. A pesar de no ser grave, el "King" no podrá participar en la Copa de la Liga.
+                                <br><br>
+                                <a href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/23/arturo-vidal-quedo-descartado-para-enfrentar-a-deportes-concepcion-y-ya-piensa-en-su-nuevo-objetivo.shtml" target="_blank" class="button is-link is-small">Leer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column is-6">
+                    <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/colo-colo-empato-ante-coquimbo-en-la-copa-de-la-liga-750x400.jpg" alt="Colo Colo empata" style="object-fit: cover;">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-5 has-text-grey-dark">Colo Colo empató con Coquimbo Unido en su debut en la Copa de la Liga</p>
+                            <div class="content has-text-grey is-size-6">
+                                Colo Colo debutó en la Copa de la Liga con un empate 1-1 ante Coquimbo Unido, donde Matías Fernández anotó para el "Cacique" a los 34 minutos, mientras que Alejandro Azócar logró la igualdad para los "Piratas" a los 79'.
+                            </div>
+                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/03/21/colo-colo-empato-con-coquimbo-unido-en-su-debut-en-la-copa-de-la-liga.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column is-6">
+                    <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/03/adidas-camiseta-chile-desierto-florido-alternativa-750x400.jpg" alt="Camiseta Chile" style="object-fit: cover;">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-5 has-text-grey-dark">Ya es oficial: lanzan nueva camiseta alternativa de Chile inspirada en Desierto Florido</p>
+                            <div class="content has-text-grey is-size-6">
+                                Lanzaron la nueva camiseta alternativa de la Selección Chilena, inspirada en el Desierto Florido, con un diseño blanco pálido y tintes rosas. Es la primera vez que el equipo vestirá un color distinto al blanco o azul, marcando un hito en su identidad visual.
+                            </div>
+                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol/la-roja/2026/03/20/ya-es-oficial-adidas-lanza-nueva-camiseta-alternativa-de-chile-inspirada-en-desierto-florido.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más →</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </article>
+        </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2>Internacional</h2>
-    <div id="cantidad-internacional">cantidad de noticias: 0</div>
-    <section id="seccion-internacional">
-        <article>
-            <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_1600x800/public/t13/field-imagen/2026-03/pexels-karola-g-8528741.jpg.jpeg?itok=CSIR-A4y"
-                width="750" height="280" />
-            <div class="info-articulo">
-                <p><strong>Radiografía del emprendimiento femenino 2026: Sobrecarga de cuidados frena el
-                        crecimiento</strong></p>
-                <p>Estudio de ChileConverge y Fundadoras revela que 7 de cada 10 emprendedoras ven su avance limitado
-                    por labores de cuidado.</p>
-                <p class="internacional1">Más información haciendo click <a
-                        href="https://www.t13.cl/noticia/emprendedores/radiografia-del-emprendimiento-femenino-2026-sobrecarga-cuidados-frena-crecimie-23-3-2026">aquí</a>
-                </p>
+
+    <section id="seccion-negocios" class="section has-background-white-ter">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-link mb-2" style="border-bottom: 3px solid #322a8f; padding-bottom: 5px;">Negocios</h2>
+            <p class="subtitle is-5 has-text-grey">En esta sección encontrará todo lo relacionado a la economía nacional</p>
+            <div id="cantidad-negocios" class="tag is-info is-light mb-5">cantidad de noticias: 0</div>
+
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://www.latercera.com/resizer/v2/JEB4BQPDFREQDGZ544DCKQ6PYQ.jpg?auth=290c2de337a3b7416f8ac7413f876c4a3e1f199669b86a04ac03b8d099b2c27a&smart=true&width=990&height=557&quality=70" alt="Startup chilena" style="object-fit: cover;">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-5 has-text-grey-dark">Startup chilena de venta de equipos reacondicionados ingresó a la selecta red mundial de Endeavor</p>
+                            <div class="content has-text-grey is-size-6">
+                                Liderada por dos jóvenes emprendedores chilenos, Reuse está transformando el acceso a la tecnología en la región, impactando el mercado de electrónicos reacondicionados en Chile, México y Perú.
+                            </div>
+                            <a href="https://www.latercera.com/emprendimiento/noticia/startup-chilena-de-venta-de-equipos-reacondicionados-ingreso-a-la-selecta-red-mundial-de-endeavor/" target="_blank" class="has-text-link has-text-weight-bold">Leer más →</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="column is-6">
+                    <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://www.diarioemprende.cl/files/69c3daa82a849_1200x719.jpg" alt="Programa emprendimientos" style="object-fit: cover;">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-5 has-text-grey-dark">Lanzan programa de escalamiento para emprendimientos liderados por mujeres</p>
+                            <div class="content has-text-grey is-size-6">
+                                Como parte de su estrategia de apoyo al emprendimiento, Bci abrió una nueva convocatoria de Scale W.
+                            </div>
+                            <a href="https://www.diarioemprende.cl/noticia/postulaciones-y-convocatorias/2026/03/lanzan-programa-de-escalamiento-para-emprendimientos-liderados-por-mujeres" target="_blank" class="has-text-link has-text-weight-bold">Leer más →</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </article>
+        </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <audio controls>
-        <source src="Asset\audio\audio.mp3" type="audio/mpeg">
-    </audio>
-    <section class="formulario-seccion">
-        <form id="formulario-contacto">
-            <h2>Contacto</h2>
-            <div class="grupo-input">
-                <label for="nombre" class="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre completo">
+
+    <section id="seccion-internacional" class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-link mb-2" style="border-bottom: 3px solid #322a8f; padding-bottom: 5px;">Internacional</h2>
+            <div id="cantidad-internacional" class="tag is-info is-light mb-5">cantidad de noticias: 0</div>
+
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <article class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by1">
+                                <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_1600x800/public/t13/field-imagen/2026-03/pexels-karola-g-8528741.jpg.jpeg?itok=CSIR-A4y" alt="Emprendimiento femenino" style="object-fit: cover; object-position: center;">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-grey-dark">Radiografía del emprendimiento femenino 2026: Sobrecarga de cuidados frena el crecimiento</p>
+                            <div class="content has-text-grey">
+                                Estudio de ChileConverge y Fundadoras revela que 7 de cada 10 emprendedoras ven su avance limitado por labores de cuidado.
+                                <br><br>
+                                <a href="https://www.t13.cl/noticia/emprendedores/radiografia-del-emprendimiento-femenino-2026-sobrecarga-cuidados-frena-crecimie-23-3-2026" target="_blank" class="button is-link is-small">Leer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="grupo-input">
-                <label for="mensaje" class="mensaje">Mensaje:</label>
-                <textarea type="text" id="mensaje" name="mensaje" rows="4"
-                    placeholder="Deje su mensaje aquí"></textarea>
-            </div>
-            <button type="submit" id="btn-enviar">Enviar</button>
-        </form>
+        </div>
     </section>
-    <footer>
-        <div class="container">
-            <p>&copy; Periódico El Faro 2026</p>
+
+    <section class="section has-background-dark">
+        <div class="container is-max-desktop has-text-centered mb-5">
+            <audio controls class="is-shadowless">
+                <source src="Asset/audio/audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <div class="container is-max-desktop">
+            <div class="box">
+                <h2 class="title is-4 has-text-centered has-text-link">Contacto</h2>
+                <form id="formulario-contacto">
+                    <div class="field">
+                        <label class="label has-text-grey-dark" for="nombre">Nombre:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre completo">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-grey-dark" for="mensaje">Mensaje:</label>
+                        <div class="control">
+                            <textarea class="textarea" id="mensaje" name="mensaje" rows="4" placeholder="Deje su mensaje aquí"></textarea>
+                        </div>
+                    </div>
+                    <div class="control mt-4">
+                        <button class="button is-link is-fullwidth has-text-weight-bold" type="submit" id="btn-enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-black has-text-light py-6">
+        <div class="container is-max-desktop content has-text-centered">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="has-text-white is-size-5 mb-3">El Faro Chile</h4>
+                    <p class="is-size-7 has-text-grey-light">Tu fuente confiable de noticias nacionales e internacionales, actualizada minuto a minuto.</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="has-text-white is-size-5 mb-3">Secciones</h4>
+                    <ul style="list-style-type: none; margin: 0; padding: 0;">
+                        <li><a class="has-text-grey-light hover-text-white" href="#seccion-deportes">Deportes</a></li>
+                        <li><a class="has-text-grey-light hover-text-white" href="#seccion-negocios">Negocios</a></li>
+                        <li><a class="has-text-grey-light hover-text-white" href="#seccion-internacional">Internacional</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h4 class="has-text-white is-size-5 mb-3">Contacto</h4>
+                    <p class="is-size-7 has-text-grey-light">contacto@elfarochile.cl<br>Santiago, Chile</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-dark my-5" style="height: 1px;">
+            <p class="is-size-7 has-text-grey">&copy; Periódico El Faro 2026. Todos los derechos reservados.</p>
         </div>
     </footer>
     <script src="script.js"></script>
