@@ -14,6 +14,7 @@ h1 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: 0;;
 }
 
 .video-bg {
@@ -100,12 +101,17 @@ button#btn-publicar:hover, button#btn-enviar:hover {
 }
 
 /* BODY */
+/* BODY */
 body {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  background-color: #FCF9F2; /* Tono crema suave para toda la página */
+  color: #333333; /* Oscurecemos un poco el texto general para mantener un buen contraste */
 }
+
+
 
 button, input, select, textarea {
   font-family: inherit;
@@ -117,7 +123,7 @@ button, input, select, textarea {
 
 .card:hover, .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 20px rgba(163, 159, 159, 0.1) !important;
 }
 
 /* Gradiente para mejorar la lectura sobre imágenes */
@@ -149,7 +155,7 @@ a {
 
 /* SECCIONES */
 section {
-    background-color: #f5f5f5;
+    background-color: #FCF9F2; /* Cambiamos el #f5f5f5 por el crema para que se fusione con el fondo */
     padding: 20px;
     margin: 30px auto;
     border-radius: 10px;
