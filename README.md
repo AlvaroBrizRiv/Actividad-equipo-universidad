@@ -20,8 +20,8 @@ El propósito principal es aplicar los conceptos fundamentales de desarrollo web
 
 -----------------------------------------------------------------------------------------------------------
 
-## 👥 Equipo de Trabajo
-Este proyecto fue maquetado, diseñado y programado por nuestro grupo de estudio.
+## 👥 Autor
+Este proyecto fue maquetado, diseñado y programado por **Álvaro Brizuela Rivera**.
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -29,6 +29,25 @@ Este proyecto fue maquetado, diseñado y programado por nuestro grupo de estudio
 * **HTML5** 🌐 - Para la estructura y semántica del contenido.
 * **CSS3** 🎨 - Para el diseño visual, efectos y adaptabilidad (Responsive Web Design).
 * **JavaScript** ⚡ - Para la manipulación del DOM, lógica de la interfaz y procesamiento de datos en tiempo real.
+* **Bulma CSS** 🏗️ - Framework CSS moderno utilizado para agilizar el diseño responsivo, la maquetación en columnas y el estilizado de componentes (tarjetas, botones, navegación).
+
+-----------------------------------------------------------------------------------------------------------
+
+## 📁 Estructura del Proyecto
+```text
+Actividad-equipo-universidad/
+├── Asset/
+│   ├── audio/
+│   │   └── audio.mp3
+│   ├── img/
+│   │   └── Icono1.png
+│   └── video/
+│       └── video.mp4
+├── agregar-articulo.html   # Formulario para publicar nuevas noticias
+├── index.html              # Página principal del portal de noticias
+├── README.md               # Documentación del proyecto
+├── script.js               # Lógica de interactividad y reloj en tiempo real
+└── styles.css              # Hoja de estilos personalizados
 
 -----------------------------------------------------------------------------------------------------------
 
