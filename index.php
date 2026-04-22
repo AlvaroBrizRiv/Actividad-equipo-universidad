@@ -168,16 +168,16 @@
                     <article class="card">
                         <div class="card-image">
                             <figure class="image is-3by1">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Casa_Rosada_-_Buenos_Aires%2C_Argentina.jpg/800px-Casa_Rosada_-_Buenos_Aires%2C_Argentina.jpg" alt="Internacional Argentina" style="object-fit: cover; object-position: center;">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/04/peru-aviones-f16-750x400.png" alt="Internacional Argentina" style="object-fit: cover; object-position: center;">
                             </figure>
                         </div>
                         <div class="card-content">
                             <span class="tag is-warning is-small mb-2">Latinoamérica</span>
-                            <p class="title is-4 has-text-white">Argentina celebra nuevo acuerdo con el FMI para acceder a millonario crédito</p>
+                            <p class="title is-4 has-text-white">Primer ministro de Perú contradice mensaje del presidente y confirma compra de aviones F-16 a EEUU</p>
                             <div class="content has-text-grey">
-                                El gobierno argentino logró cerrar las negociaciones con el Fondo Monetario Internacional para la inyección de mil millones de dólares destinados a estabilizar su economía.
+                                Perú ratifica la adquisición de aviones F-16 a EE. UU. a pesar de las diferencias en el gobierno interino. El primer ministro Luis Arroyo confirma el cumplimiento de compromisos y destaca la importancia de fortalecer las Fuerzas Armadas.
                                 <br><br>
-                                <a href="https://www.cooperativa.cl/noticias/mundo/argentina/argentina-celebro-acuerdo-con-el-fmi-para-acceder-a-otros-mil-millones/2026-04-15/155100.html" target="_blank" class="button is-link is-small">Leer más en Cooperativa</a>
+                                <a href="https://www.biobiochile.cl/noticias/internacional/america-latina/2026/04/22/primer-ministro-de-peru-contradice-mensaje-del-presidente-y-ratifica-compra-de-aviones-f-16-a-eeuu.shtml" target="_blank" class="button is-link is-small">Leer más en BioBioChile</a>
                             </div>
                         </div>
                     </article>
@@ -195,16 +195,16 @@
                     <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
                         <div class="card-image">
                             <figure class="image is-16by9">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Allianz_Arena_M%C3%BCnchen.jpg/800px-Allianz_Arena_M%C3%BCnchen.jpg" alt="Champions League" style="object-fit: cover;">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/04/premier-league-manchester-city-supera-al-arsenal-y-ya-es-lider-750x400.jpg" alt="Champions League" style="object-fit: cover;">
                             </figure>
                         </div>
                         <div class="card-content" style="flex-grow: 1;">
-                            <span class="tag is-danger is-small mb-2">Champions League</span>
-                            <p class="title is-5 has-text-white">Bayern Múnich elimina al Real Madrid y avanza a semifinales</p>
+                            <span class="tag is-danger is-small mb-2">Premier League</span>
+                            <p class="title is-5 has-text-white">Hay nuevo líder en Premier League: Manchester City ganó al Burnley y arrebató cima al Arsenal</p>
                             <div class="content has-text-grey is-size-6">
-                                En un partidazo de infarto en Europa, la escuadra alemana logró derrotar al "Rey de Europa", dejando a los merengues fuera del torneo continental más importante.
+                                Manchester City desbanca al Arsenal y se posiciona como líder de la Premier League tras vencer a Burnley en un partido destacado por la actuación de Erling Haaland.
                             </div>
-                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol/futbol-internacional/2026/04/15/la-champions-sin-su-rey-bayern-le-gano-un-partidazo-al-real-madrid-y-avanzo-a-las-semifinales.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más en BioBioChile →</a>
+                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/04/22/premier-league-manchester-city-supera-al-arsenal-y-ya-es-lider.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más en BioBioChile →</a>
                         </div>
                     </article>
                 </div>
@@ -213,16 +213,16 @@
                     <article class="card h-100" style="height: 100%; display: flex; flex-direction: column;">
                         <div class="card-image">
                             <figure class="image is-16by9">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Estadio_S%C3%A1nchez_Rumoroso_2.jpg/800px-Estadio_S%C3%A1nchez_Rumoroso_2.jpg" alt="Coquimbo Unido" style="object-fit: cover;">
+                                <img src="https://media.biobiochile.cl/wp-content/uploads/2026/04/gabriel-castellon-750x400.jpg" alt="Coquimbo Unido" style="object-fit: cover;">
                             </figure>
                         </div>
                         <div class="card-content" style="flex-grow: 1;">
                             <span class="tag is-danger is-small mb-2">Copa Libertadores</span>
-                            <p class="title is-5 has-text-white">El 'Pirata' asaltó Lima: Coquimbo ganó a Universitario</p>
+                            <p class="title is-5 has-text-white">Gabriel Castellón acusa volteretas de autoridades por presencia de hinchada visitante en estadios</p>
                             <div class="content has-text-grey is-size-6">
-                                Coquimbo Unido logró una histórica hazaña como visitante al derrotar a Universitario en Perú, sumando su primer triunfo en la actual edición de la copa.
+                                Este sábado se disputará el clásico universitario entre la Universidad de Chile y la Universidad Católica, donde Gabriel Castellón sería el portero titular para los locales.
                             </div>
-                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol/copa-libertadores/2026/04/14/el-pirata-asalto-lima-coquimbo-gano-a-universitario-y-sumo-primer-triunfo-en-copa-libertadores.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más en BioBioChile →</a>
+                            <a href="https://www.biobiochile.cl/noticias/deportes/futbol/universidad-de-chile/2026/04/22/gabriel-castellon-acusa-volteretas-de-autoridades-por-presencia-de-hinchada-visitante-en-estadios.shtml" target="_blank" class="has-text-link has-text-weight-bold">Leer más en BioBioChile →</a>
                         </div>
                     </article>
                 </div>
