@@ -1,5 +1,5 @@
 <?php
-require_once '../Config/Conexion.php';
+require_once __DIR__ . '/../Config/Conexion.php';
 
 class Usuario {
     public $nombre;
@@ -52,9 +52,11 @@ class Usuario {
 
             // Seleccionamos los usuarios ordenados por el más reciente
             $query = "SELECT id, nombre, apellido, email, fecha_registro FROM usuarios ORDER BY fecha_registro DESC";
+            // Ejecutamos la consulta y retornamos los resultados
             $stmt = $conn->prepare($query);
+            // No necesitamos parámetros para esta consulta, así que simplemente la ejecutamos
             $stmt->execute();
-
+            // Retornamos un array asociativo con los usuarios
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         } catch(PDOException $e) {
