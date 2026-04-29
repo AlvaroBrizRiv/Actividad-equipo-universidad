@@ -1,13 +1,13 @@
 <?php
+require_once '../Config/Conexion.php';
+
 class Articulo {
-    // Atributos que componen una noticia
     public $titulo;
     public $descripcion;
     public $imagenURL;
     public $categoria;
     public $enlaceFuente;
 
-    // El constructor inicializa el objeto con los datos que le pasemos desde el Controlador
     public function __construct($titulo, $descripcion, $imagenURL, $categoria, $enlaceFuente) {
         $this->titulo = $titulo;
         $this->descripcion = $descripcion;
@@ -16,11 +16,33 @@ class Articulo {
         $this->enlaceFuente = $enlaceFuente;
     }
 
-    // Método que se encargará de interactuar con la base de datos
     public function guardar() {
-        // [Sprint 4] Aquí irá la consulta SQL (INSERT INTO articulos...)
-        // Por el momento, retornamos 'true' para simular que se guardó correctamente en la BD.
-        return true; 
+        try {
+            $conexionBase = new Conexion();
+            $conn = $conexionBase->obtenerConexion();
+
+            // Consulta SQL con parámetros nombrados (:titulo, :desc...) para evitar SQL Injection
+            $query = "INSERT INTO articulos (titulo, descripcion, imagen_url, categoria, enlace_fuente) 
+                      VALUES (:titulo, :descripcion, :imagen_url, :categoria, :enlace_fuente)";
+            
+            $stmt = $conn->prepare($query);
+
+            // Vinculamos (bind) los valores de los atributos a los parámetros de la consulta
+            $stmt->bindParam(':titulo', $this->titulo);
+            $stmt->bindParam(':descripcion', $this->descripcion);
+            $stmt->bindParam(':imagen_url', $this->imagenURL);
+            $stmt->bindParam(':categoria', $this->categoria);
+            $stmt->bindParam(':enlace_fuente', $this->enlaceFuente);
+
+            // Ejecutamos la consulta
+            if ($stmt->execute()) {
+                return true;
+            }
+            return false;
+        } catch(PDOException $e) {
+            echo "Error al guardar artículo: " . $e->getMessage();
+            return false;
+        }
     }
 }
 ?>

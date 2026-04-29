@@ -305,33 +305,4 @@
             </div>
         </div>
     </section>
-    <section class="section has-background-dark">
-        <div class="container is-max-desktop has-text-centered mb-5">
-            <audio controls class="is-shadowless">
-                <source src="Asset/audio/audio.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="container is-max-desktop">
-            <div class="box">
-                <h2 class="title is-4 has-text-centered has-text-link">Contacto</h2>
-                <form id="formulario-contacto">
-                    <div class="field">
-                        <label class="label has-text-grey-dark" for="nombre">Nombre:</label>
-                        <div class="control">
-                            <input class="input" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre completo">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-grey-dark" for="mensaje">Mensaje:</label>
-                        <div class="control">
-                            <textarea class="textarea" id="mensaje" name="mensaje" rows="4" placeholder="Deje su mensaje aquí"></textarea>
-                        </div>
-                    </div>
-                    <div class="control mt-4">
-                        <button class="button is-link is-fullwidth has-text-weight-bold" type="submit" id="btn-enviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+   

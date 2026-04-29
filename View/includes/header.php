@@ -1,4 +1,3 @@
-<?php
 <nav class="navbar is-dark is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">

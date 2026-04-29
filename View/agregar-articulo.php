@@ -26,7 +26,9 @@
                             <p class="subtitle is-6">Completa los campos para publicar en el portal principal</p>
                         </div>
 
-                        <form id="formulario-articulo" action="Controller/ArticuloController.php" method="POST">
+                        <link rel="stylesheet" href="../styles.css">
+
+<form id="formulario-articulo" action="../Controller/ArticuloController.php" method="POST">
     
     <div class="field">
         <label class="label">URL de la imagen representativa</label>

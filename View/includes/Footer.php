@@ -1,4 +1,3 @@
-<?php
 <footer class="footer has-background-black has-text-light py-6">
         <div class="container is-max-desktop content has-text-centered">
             <div class="columns">
