@@ -44,5 +44,28 @@ class Articulo {
             return false;
         }
     }
+
+    // Método para obtener artículos desde la base de datos según su categoría
+    public static function obtenerPorCategoria($categoriaBusqueda) {
+        try {
+            $conexionBase = new Conexion();
+            $conn = $conexionBase->obtenerConexion();
+
+            // Seleccionamos los artículos de la categoría solicitada, ordenados por los más recientes.
+            // LIMIT 3 asegura que presentemos una cantidad controlada por página/sección.
+            $query = "SELECT * FROM articulos WHERE categoria = :categoria ORDER BY fecha_publicacion DESC LIMIT 3";
+            
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(':categoria', $categoriaBusqueda);
+            $stmt->execute();
+
+            // fetchAll() nos devuelve un arreglo asociativo con todos los resultados
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        } catch(PDOException $e) {
+            // En caso de error, devolvemos un arreglo vacío para no romper la vista
+            return [];
+        }
+    }
 }
 ?>

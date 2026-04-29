@@ -20,21 +20,16 @@ class ArticuloController {
 
             // Llamamos al método guardar() del modelo
             if ($nuevoArticulo->guardar()) {
-                // Si se guarda con éxito, mostramos una alerta usando las clases de Bulma CSS
-                echo "<div class='notification is-success mt-4'>";
-                echo "<strong>¡Artículo publicado con éxito en la categoría " . strtoupper($categoria) . "!</strong><br>";
-                echo "El título registrado es: " . $nuevoArticulo->titulo;
-                echo "</div>";
-                
-                // Más adelante, aquí agregaremos una redirección al index:
-                // header("Location: ../index.php");
+                // Redirigimos al index, enviamos éxito y saltamos dinámicamente a la categoría actualizada
+                $ancla = strtolower($categoria);
+                header("Location: ../View/index.php?status=articulo_success#seccion-" . $ancla);
+                exit();
             } else {
                 echo "<div class='notification is-danger mt-4'>Hubo un error al guardar el artículo.</div>";
             }
         }
     }
 }
-
 // Bloque de ejecución: Si el formulario envía los datos a este archivo, creamos el controlador y disparamos la función.
 if (isset($_POST['titulo'])) {
     $controlador = new ArticuloController();

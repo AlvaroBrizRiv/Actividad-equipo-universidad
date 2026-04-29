@@ -45,6 +45,36 @@
         </div>
     </div>
 
+    <div class="field">
+        <label class="label">Descripción de la Noticia</label>
+        <div class="control">
+            <textarea class="textarea" id="descripcion-articulo" name="descripcion" placeholder="Escribe el resumen de la noticia aquí..." required></textarea>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Categoría</label>
+        <div class="control">
+            <div class="select is-fullwidth is-link">
+                <select id="categoria-articulo" name="categoria" required>
+                    <option value="" disabled selected>Selecciona una categoría...</option>
+                    <option value="nacional">Nacional</option>
+                    <option value="internacional">Internacional</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="negocios">Negocios</option>
+                    <option value="espectaculo">Espectáculo</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Enlace a la Fuente Original</label>
+        <div class="control">
+            <input class="input" type="url" id="link-articulo" name="link" placeholder="https://fuente-original.com" required>
+        </div>
+    </div>
+
     <div class="buttons is-centered mt-5">
         <button type="submit" class="button is-link is-large is-fullwidth">
             Publicar en El Faro

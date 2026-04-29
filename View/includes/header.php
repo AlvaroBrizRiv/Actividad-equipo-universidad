@@ -24,7 +24,7 @@
       <div class="navbar-end">
   <div class="navbar-item">
     <div class="buttons">
-      <a class="button is-warning is-small has-text-weight-bold" href="agregar-articulo.html" target="_blank">
+      <a class="button is-warning is-small has-text-weight-bold" href="agregar-articulo.php">
         <span class="icon-text">
           <span class="icon"><i class="fas fa-plus-circle"></i></span>
           <span>Agregar artículo</span>

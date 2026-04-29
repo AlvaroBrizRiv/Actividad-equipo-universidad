@@ -21,6 +21,7 @@ class Conexion {
             // Configuramos PDO para que lance excepciones (errores detallados) si algo falla
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
+            // Opcional: Configuramos PDO para que devuelva los resultados como objetos
         } catch(PDOException $exception) {
             // Si la conexión falla, capturamos el error de forma controlada
             echo "<div style='background-color:#ffdddd; color:red; padding:10px;'>";

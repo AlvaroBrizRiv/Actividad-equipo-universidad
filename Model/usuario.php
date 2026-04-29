@@ -43,5 +43,24 @@ class Usuario {
     public function obtenerSaludo() {
         return "Hola, soy " . $this->nombre . " " . $this->apellido . " y mi correo es " . $this->email;
     }
+
+    // Método para obtener todos los usuarios registrados
+    public static function obtenerTodos() {
+        try {
+            $conexionBase = new Conexion();
+            $conn = $conexionBase->obtenerConexion();
+
+            // Seleccionamos los usuarios ordenados por el más reciente
+            $query = "SELECT id, nombre, apellido, email, fecha_registro FROM usuarios ORDER BY fecha_registro DESC";
+            $stmt = $conn->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        } catch(PDOException $e) {
+            echo "Error al obtener usuarios: " . $e->getMessage();
+            return [];
+        }
+    }
 }
 ?>
